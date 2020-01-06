@@ -1,0 +1,11 @@
+<div class="jumbotron card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+    <div class="text-white text-center py-5 px-4">
+      <div>
+        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold" *ngIf="!sesionActiva()"><strong>Bienvenido a la web de la Entidad2</strong></h2>
+        <h2 class="card-title h1-responsive pt-3 mb-5 font-bold" *ngIf="sesionActiva()"><strong>Bienvenido {{Nombre}}</strong></h2>
+        <p class="mx-5 mb-5">Aún está por definir el papel que esta entidad tendrá.
+        </p>
+        <a class="btn btn-light" *ngIf="!sesionActiva()" [routerLink]="['/login']"> Inicia Sesión!</a>
+      </div>
+    </div>
+  </div>
