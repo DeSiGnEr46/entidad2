@@ -1,6 +1,7 @@
 # Entidad2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This project was developed by Oliver López Olmedo as part of his TFM at the University of Málaga.
 
 ## Development server
 
