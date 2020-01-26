@@ -1,0 +1,135 @@
+<div class="container" style="padding-top: 10px;">
+
+    <p class="h2-responsive text-center">Modificar transacción</p>
+    <hr>
+
+    <h5 class="text-center" style="color:red;">¡ Atención, la información puede no aparecer. Recargar hasta que aparezca
+        !</h5>
+    <div class="text-center">
+        <button mdbBtn (click)="reload()" class="btn green accent-2">Recargar</button>
+    </div>
+    <hr>
+    <!-- Formulario de cambio de datos personales-->
+    <form [formGroup]="editTrans" (ngSubmit)="editar()">
+        <div class="modal-body">
+            <!-- Formulario de cambio de nombre y/o correo -->
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="channel" placeholder="Channel" class="form-control form-control-sm"
+                    formControlName="channel">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="key" placeholder="Key" class="form-control form-control-sm"
+                    formControlName="key">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-align-left prefix grey-text"></i>
+                <input type="text" id="producto" placeholder="Producto" class="form-control form-control-sm"
+                    formControlName="producto">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-align-left prefix grey-text"></i>
+                <input type="text" id="modelo" placeholder="Modelo" class="form-control form-control-sm"
+                    formControlName="modelo">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-align-left prefix grey-text"></i>
+                <input type="text" id="tipo" placeholder="Tipo" class="form-control form-control-sm"
+                    formControlName="tipo">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-calculator prefix grey-text"></i>
+                <input type="text" id="dimensiones" placeholder="Dimensiones" class="form-control form-control-sm"
+                    formControlName="dimensiones">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-calendar prefix grey-text"></i>
+                <input type="text" id="fecha_fab" placeholder="Fecha Fabricación" class="form-control form-control-sm"
+                    formControlName="fecha_fab">
+                <!-- Errores de validación -->
+                <div *ngIf="editTrans.controls['fecha_fab'].errors?.pattern" class="form-control-feedback">
+                    El formato de fecha no es correcto: DD-MM-YYYY
+                </div>
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-list prefix grey-text"></i>
+                <input type="text" id="materiales" placeholder="Materiales" class="form-control form-control-sm"
+                    formControlName="materiales">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-align-left prefix grey-text"></i>
+                <input type="text" id="descripcion" placeholder="Descripción" class="form-control form-control-sm"
+                    formControlName="descripcion">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-calculator prefix grey-text"></i>
+                <input type="text" id="cantidad" placeholder="Cantidad" class="form-control form-control-sm"
+                    formControlName="cantidad">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-calculator prefix grey-text"></i>
+                <input type="text" id="precio_ud" placeholder="Precio unidad" class="form-control form-control-sm"
+                    formControlName="precio_ud">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-calculator prefix grey-text"></i>
+                <input type="text" id="precio_tot" placeholder="Precio total" class="form-control form-control-sm"
+                    formControlName="precio_tot">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="origen" placeholder="Origen" class="form-control form-control-sm"
+                    formControlName="origen">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="dst" placeholder="Destino" class="form-control form-control-sm"
+                    formControlName="dst">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="ordenante" placeholder="Ordenante" class="form-control form-control-sm"
+                    formControlName="ordenante">
+            </div>
+
+            <div class="md-form">
+                <i class="fa fa-calendar prefix grey-text"></i>
+                <input type="text" id="fecha_env" placeholder="Fecha envio" class="form-control form-control-sm"
+                    formControlName="fecha_env">
+                <!-- Errores de validación -->
+                <div *ngIf="editTrans.controls['fecha_env'].errors?.pattern" class="form-control-feedback">
+                    El formato de fecha no es correcto: DD-MM-YYYY
+                </div>
+            </div>
+            <!-- Mensajes de confirmación/error -->
+            <div class="green-text" *ngIf="submitOk">
+                Los cambios se han guardado correctamente.
+            </div>
+            <div class="red-text" *ngIf="!submitOk && submitOk != null">
+                Se ha producido un error. Inténtelo de nuevo.
+            </div>
+
+            <div class="text-center mb-10">
+                <button [disabled]="!editTrans.valid" class="btn btn-unique waves-light " type="submit"
+                    mdbWavesEffect>Modificar
+                    <i class="fa fa-paper-plane-o ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

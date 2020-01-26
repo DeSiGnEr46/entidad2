@@ -12,17 +12,22 @@ import { PanelAdministracionComponent } from './componentes/panel-administracion
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { EditarUsuarioComponent } from './componentes/editar-usuario/editar-usuario.component';
 import { EliminarUsuarioComponent } from './componentes/eliminar-usuario/eliminar-usuario.component';
+import { WorldStateComponent } from './componentes/world-state/world-state.component';
 
 import { LogService } from './servicios/log.service';
 import { AuthGuardService } from './servicios/auth-guard.service';
 import { AdminGuardService } from './servicios/admin-guard.service';
 import { UsuariosService } from './servicios/usuarios.service';
+import { BlockchainService } from './servicios/blockchain.service';
 
 import { APP_ROUTING } from './app.routes';
 import { NavbarComponent } from './componentes/shared/navbar/navbar.component';
 import { FooterComponent } from './componentes/shared/footer/footer.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { AddTransactionComponent } from './componentes/add-transaction/add-transaction.component';
+import { TransHistorialComponent } from './componentes/trans-historial/trans-historial.component';
+import { EditarTransaccionComponent } from './componentes/editar-transaccion/editar-transaccion.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +41,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     EliminarUsuarioComponent,
     NavbarComponent,
     FooterComponent,
+    WorldStateComponent,
+    AddTransactionComponent,
+    TransHistorialComponent,
+    EditarTransaccionComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +59,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     LogService,
     AuthGuardService,
     AdminGuardService,
-    UsuariosService
+    UsuariosService,
+    BlockchainService
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]

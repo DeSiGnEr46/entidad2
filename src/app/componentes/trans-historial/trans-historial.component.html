@@ -1,0 +1,71 @@
+<div class="container pt-3">
+    <div class="card">
+        <div class="card-body">
+
+            <h2> Historial de transacciones asociadas a la Tx {{ key }}</h2><hr>
+            <h5 class="text-center" style="color:red;">¡ Atención, las transacciones pueden no cargar. Recargar hasta que aparezcan !</h5>
+            <div class="text-center">
+                <button mdbBtn (click)="queryHist()" class="btn green accent-2">Recargar</button>
+            </div><br>
+            <!--Table-->
+            <div class="table-responsive">
+                <table class="table table-striped">
+
+                    <!--Table head-->
+                    <thead>
+                        <tr>
+                            <th>IsDelete</th>
+                            <th>TimeStamp</th>
+                            <th>TxID</th>
+                            <th>Producto</th>
+                            <th>Modelo</th>
+                            <th>Tipo</th>
+                            <th>Dimensiones</th>
+                            <th>Fecha fabricación</th>
+                            <th>Materiales</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Precio Ud</th>
+                            <th>Precio Total</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Ordenante</th>
+                            <th>Fecha envio</th>
+                        </tr>
+                    </thead>
+                    <!--Table head-->
+
+                    <!--Table body-->
+                    <tbody>
+                        <tr *ngFor="let transac of historial">
+                            <!-- Aquí va el ngFor-->
+                            <td scope="row">{{ transac.IsDelete }}</td>
+                            <td>{{ transac.Timestamp }}</td>
+                            <td>{{ transac.TxID }}</td>
+                            <td>{{ transac.Value.producto }}</td>
+                            <td>{{ transac.Value.modelo }}</td>
+                            <td>{{ transac.Value.tipo }}</td>
+                            <td>{{ transac.Value.dimensiones }}</td>
+                            <td>{{ transac.Value.fechafab }} </td>
+                            <td>{{ transac.Value.materiales }} </td>
+                            <td>{{ transac.Value.descripcion}} </td>
+                            <td>{{ transac.Value.cantidad }} </td>
+                            <td>{{ transac.Value.precio_ud }} </td>
+                            <td>{{ transac.Value.precio_tot }} </td>
+                            <td>{{ transac.Value.origen }} </td>
+                            <td>{{ transac.Value.dst }} </td>
+                            <td>{{ transac.Value.Orderer }} </td>
+                            <td>{{ transac.Value.fechaenv }} </td>
+                        </tr>
+                    </tbody>
+                    <!--Table body-->
+                </table>
+                <!--Table-->
+            </div>
+            <div class="text-center">
+                <a mdbBtn [routerLink]="['/world-state']" class="btn green accent-2">Volver</a>
+            </div><br>
+        </div>
+    </div>
+</div>
+

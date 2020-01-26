@@ -56,6 +56,46 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/add-transaction/add-transaction.component.html":
+  /*!******************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/add-transaction/add-transaction.component.html ***!
+    \******************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentesAddTransactionAddTransactionComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"container\" style=\"padding-top: 10px;\">\n\n    <h5 class=\"text-center\" style=\"color:red;\">¡ Atención, la nueva clave puede no aparecer. Recargar hasta que\n        aparezca !</h5>\n    <div class=\"text-center\">\n        <button mdbBtn (click)=\"reload()\" class=\"btn green accent-2\">Obtener Clave</button>\n    </div>\n    <hr>\n    <!-- Formulario de cambio de datos personales-->\n    <form [formGroup]=\"addTrans\" (ngSubmit)=\"crear()\">\n        <div class=\"modal-body\">\n            <p class=\"h2-responsive text-center\">Crear envío</p>\n            <hr>\n\n            <!-- Formulario de cambio de nombre y/o correo -->\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"channel\" placeholder=\"Channel\" class=\"form-control form-control-sm\"\n                    formControlName=\"channel\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"key\" placeholder=\"Key\" class=\"form-control form-control-sm\"\n                    formControlName=\"key\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"producto\" placeholder=\"Producto\" class=\"form-control form-control-sm\"\n                    formControlName=\"producto\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"modelo\" placeholder=\"Modelo\" class=\"form-control form-control-sm\"\n                    formControlName=\"modelo\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"tipo\" placeholder=\"Tipo\" class=\"form-control form-control-sm\"\n                    formControlName=\"tipo\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"dimensiones\" placeholder=\"Dimensiones\" class=\"form-control form-control-sm\"\n                    formControlName=\"dimensiones\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calendar prefix grey-text\"></i>\n                <input type=\"text\" id=\"fecha_fab\" placeholder=\"Fecha Fabricación\" class=\"form-control form-control-sm\"\n                    formControlName=\"fecha_fab\">\n                <!-- Errores de validación -->\n                <div *ngIf=\"addTrans.controls['fecha_fab'].errors?.pattern\" class=\"form-control-feedback\">\n                    El formato de fecha no es correcto: DD-MM-YYYY\n                </div>\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-list prefix grey-text\"></i>\n                <input type=\"text\" id=\"materiales\" placeholder=\"Materiales\" class=\"form-control form-control-sm\"\n                    formControlName=\"materiales\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"descripcion\" placeholder=\"Descripción\" class=\"form-control form-control-sm\"\n                    formControlName=\"descripcion\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"cantidad\" placeholder=\"Cantidad\" class=\"form-control form-control-sm\"\n                    formControlName=\"cantidad\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"precio_ud\" placeholder=\"Precio unidad\" class=\"form-control form-control-sm\"\n                    formControlName=\"precio_ud\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"precio_tot\" placeholder=\"Precio total\" class=\"form-control form-control-sm\"\n                    formControlName=\"precio_tot\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"origen\" placeholder=\"Origen\" class=\"form-control form-control-sm\"\n                    formControlName=\"origen\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"dst\" placeholder=\"Destino\" class=\"form-control form-control-sm\"\n                    formControlName=\"dst\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"ordenante\" placeholder=\"Ordenante\" class=\"form-control form-control-sm\"\n                    formControlName=\"ordenante\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calendar prefix grey-text\"></i>\n                <input type=\"text\" id=\"fecha_env\" placeholder=\"Fecha envio\" class=\"form-control form-control-sm\"\n                    formControlName=\"fecha_env\">\n                <!-- Errores de validación -->\n                <div *ngIf=\"addTrans.controls['fecha_env'].errors?.pattern\" class=\"form-control-feedback\">\n                    El formato de fecha no es correcto: DD-MM-YYYY\n                </div>\n            </div>\n            <!-- Mensajes de confirmación/error -->\n            <div class=\"green-text\" *ngIf=\"submitOk\">\n                Los cambios se han guardado correctamente.\n            </div>\n            <div class=\"red-text\" *ngIf=\"!submitOk && submitOk != null\">\n                Se ha producido un error. Inténtelo de nuevo.\n            </div>\n\n            <div class=\"text-center mb-10\">\n                <button [disabled]=\"!addTrans.valid\" class=\"btn btn-unique waves-light \" type=\"submit\"\n                    mdbWavesEffect>Crear\n                    <i class=\"fa fa-paper-plane-o ml-1\"></i>\n                </button>\n            </div>\n        </div>\n    </form>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/editar-transaccion/editar-transaccion.component.html":
+  /*!************************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/editar-transaccion/editar-transaccion.component.html ***!
+    \************************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentesEditarTransaccionEditarTransaccionComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"container\" style=\"padding-top: 10px;\">\n\n    <p class=\"h2-responsive text-center\">Modificar transacción</p>\n    <hr>\n\n    <h5 class=\"text-center\" style=\"color:red;\">¡ Atención, la información puede no aparecer. Recargar hasta que aparezca\n        !</h5>\n    <div class=\"text-center\">\n        <button mdbBtn (click)=\"reload()\" class=\"btn green accent-2\">Recargar</button>\n    </div>\n    <hr>\n    <!-- Formulario de cambio de datos personales-->\n    <form [formGroup]=\"editTrans\" (ngSubmit)=\"editar()\">\n        <div class=\"modal-body\">\n            <!-- Formulario de cambio de nombre y/o correo -->\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"channel\" placeholder=\"Channel\" class=\"form-control form-control-sm\"\n                    formControlName=\"channel\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"key\" placeholder=\"Key\" class=\"form-control form-control-sm\"\n                    formControlName=\"key\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"producto\" placeholder=\"Producto\" class=\"form-control form-control-sm\"\n                    formControlName=\"producto\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"modelo\" placeholder=\"Modelo\" class=\"form-control form-control-sm\"\n                    formControlName=\"modelo\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"tipo\" placeholder=\"Tipo\" class=\"form-control form-control-sm\"\n                    formControlName=\"tipo\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"dimensiones\" placeholder=\"Dimensiones\" class=\"form-control form-control-sm\"\n                    formControlName=\"dimensiones\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calendar prefix grey-text\"></i>\n                <input type=\"text\" id=\"fecha_fab\" placeholder=\"Fecha Fabricación\" class=\"form-control form-control-sm\"\n                    formControlName=\"fecha_fab\">\n                <!-- Errores de validación -->\n                <div *ngIf=\"editTrans.controls['fecha_fab'].errors?.pattern\" class=\"form-control-feedback\">\n                    El formato de fecha no es correcto: DD-MM-YYYY\n                </div>\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-list prefix grey-text\"></i>\n                <input type=\"text\" id=\"materiales\" placeholder=\"Materiales\" class=\"form-control form-control-sm\"\n                    formControlName=\"materiales\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-align-left prefix grey-text\"></i>\n                <input type=\"text\" id=\"descripcion\" placeholder=\"Descripción\" class=\"form-control form-control-sm\"\n                    formControlName=\"descripcion\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"cantidad\" placeholder=\"Cantidad\" class=\"form-control form-control-sm\"\n                    formControlName=\"cantidad\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"precio_ud\" placeholder=\"Precio unidad\" class=\"form-control form-control-sm\"\n                    formControlName=\"precio_ud\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calculator prefix grey-text\"></i>\n                <input type=\"text\" id=\"precio_tot\" placeholder=\"Precio total\" class=\"form-control form-control-sm\"\n                    formControlName=\"precio_tot\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"origen\" placeholder=\"Origen\" class=\"form-control form-control-sm\"\n                    formControlName=\"origen\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"dst\" placeholder=\"Destino\" class=\"form-control form-control-sm\"\n                    formControlName=\"dst\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-user prefix grey-text\"></i>\n                <input type=\"text\" id=\"ordenante\" placeholder=\"Ordenante\" class=\"form-control form-control-sm\"\n                    formControlName=\"ordenante\">\n            </div>\n\n            <div class=\"md-form\">\n                <i class=\"fa fa-calendar prefix grey-text\"></i>\n                <input type=\"text\" id=\"fecha_env\" placeholder=\"Fecha envio\" class=\"form-control form-control-sm\"\n                    formControlName=\"fecha_env\">\n                <!-- Errores de validación -->\n                <div *ngIf=\"editTrans.controls['fecha_env'].errors?.pattern\" class=\"form-control-feedback\">\n                    El formato de fecha no es correcto: DD-MM-YYYY\n                </div>\n            </div>\n            <!-- Mensajes de confirmación/error -->\n            <div class=\"green-text\" *ngIf=\"submitOk\">\n                Los cambios se han guardado correctamente.\n            </div>\n            <div class=\"red-text\" *ngIf=\"!submitOk && submitOk != null\">\n                Se ha producido un error. Inténtelo de nuevo.\n            </div>\n\n            <div class=\"text-center mb-10\">\n                <button [disabled]=\"!editTrans.valid\" class=\"btn btn-unique waves-light \" type=\"submit\"\n                    mdbWavesEffect>Modificar\n                    <i class=\"fa fa-paper-plane-o ml-1\"></i>\n                </button>\n            </div>\n        </div>\n    </form>\n</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/editar-usuario/editar-usuario.component.html":
   /*!****************************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/editar-usuario/editar-usuario.component.html ***!
@@ -111,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"jumbotron card card-image\" style=\"background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);\">\n    <div class=\"text-white text-center py-5 px-4\">\n      <div>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"!sesionActiva()\"><strong>Bienvenido a la web de la Entidad2</strong></h2>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"sesionActiva()\"><strong>Bienvenido {{Nombre}}</strong></h2>\n        <p class=\"mx-5 mb-5\">Aún está por definir el papel que esta entidad tendrá.\n        </p>\n        <a class=\"btn btn-light\" *ngIf=\"!sesionActiva()\" [routerLink]=\"['/login']\"> Inicia Sesión!</a>\n      </div>\n    </div>\n  </div>";
+    __webpack_exports__["default"] = "<div class=\"jumbotron card card-image\" style=\"background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);\">\n    <div class=\"text-white text-center py-5 px-4\">\n      <div>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"!sesionActiva()\"><strong>Bienvenido a la web de la Entidad2</strong></h2>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"sesionActiva()\"><strong>Bienvenido {{Nombre}}</strong></h2>\n        <p class=\"mx-5 mb-5\">En esta organización se desarrollan piezas que se utilizan para montar productos finales.\n        </p>\n        <a class=\"btn btn-light\" *ngIf=\"!sesionActiva()\" [routerLink]=\"['/login']\"> Inicia Sesión!</a>\n      </div>\n    </div>\n  </div>";
     /***/
   },
 
@@ -231,7 +271,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!--Navbar-->\n<nav class=\"navbar navbar-expand-lg navbar-dark rgba-indigo-strong\">\n\n    <!-- Navbar brand -->\n    <logo>\n      <a class=\"navbar-brand\" [routerLink]=\"['/home']\">ENTIDAD 2</a>\n    </logo>\n  \n    <!-- Collapsible content -->\n    <links>\n\n      <!-- Links -->\n      <ul class=\"navbar-nav mr-auto\">\n          <li class=\"nav-item active\" routerLinkActive=\"active\">\n              <a class=\"nav-link waves-light\" [routerLink]=\"['/home']\" mdbRippleRadius>Home</a>\n          </li>\n\n          <li class=\"nav-item\" routerLinkActive=\"active\">\n              <a *ngIf=\"sesionActiva()\" class=\"nav-link waves-light\" [routerLink]=\"['/perfil']\" mdbRippleRadius>Perfil</a>\n          </li>\n\n          <li class=\"nav-item\" routerLinkActive=\"active\">\n              <a *ngIf=\"sesionActiva() && esAdmin()\" class=\"nav-link waves-light\" [routerLink]=\"['/panelAdmin']\" mdbRippleRadius>Panel de Administración</a>\n          </li>\n\n          <li class=\"nav-item\" routerLinkActive=\"active\">\n              <a *ngIf=\"!sesionActiva()\" class=\"nav-link waves-light\" [routerLink]=\"['/login']\" mdbRippleRadius>Iniciar Sesión</a>\n          </li>\n\n          <li class=\"nav-item\" routerLinkActive=\"active\">\n              <a *ngIf=\"sesionActiva()\" class=\"nav-link waves-light\" (click)=\"desconectarse()\" mdbRippleRadius>Desconectarse</a>\n          </li>\n      </ul>\n      <!-- Links -->\n  </links>\n  <!-- Collapsible content -->\n  \n  </nav>\n  <!--/.Navbar-->";
+    __webpack_exports__["default"] = "<!--Navbar-->\n<nav class=\"navbar navbar-expand-lg navbar-dark secondary-color\">\n\n    <!-- Navbar brand -->\n    <logo>\n        <a class=\"navbar-brand\" [routerLink]=\"['/home']\">ENTIDAD 2</a>\n    </logo>\n\n    <!-- Collapsible content -->\n    <links>\n\n        <!-- Links -->\n        <ul class=\"navbar-nav mr-auto\">\n            <li class=\"nav-item active\" routerLinkActive=\"active\">\n                <a class=\"nav-link waves-light\" [routerLink]=\"['/home']\" mdbRippleRadius>Home</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a *ngIf=\"sesionActiva()\" class=\"nav-link waves-light\" [routerLink]=\"['/world-state']\"\n                    mdbRippleRadius>Estado</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a *ngIf=\"sesionActiva() && esAdmin()\" class=\"nav-link waves-light\" [routerLink]=\"['/addtrans']\"\n                    mdbRippleRadius>Nuevo Envío</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a *ngIf=\"sesionActiva()\" class=\"nav-link waves-light\" [routerLink]=\"['/perfil']\"\n                    mdbRippleRadius>Perfil</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a *ngIf=\"sesionActiva() && esAdmin()\" class=\"nav-link waves-light\" [routerLink]=\"['/panelAdmin']\"\n                    mdbRippleRadius>Panel de Administración</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a *ngIf=\"!sesionActiva()\" class=\"nav-link waves-light\" [routerLink]=\"['/login']\"\n                    mdbRippleRadius>Iniciar Sesión</a>\n            </li>\n\n            <li class=\"nav-item\" routerLinkActive=\"active\">\n                <a *ngIf=\"sesionActiva()\" class=\"nav-link waves-light\" (click)=\"desconectarse()\"\n                    mdbRippleRadius>Desconectarse</a>\n            </li>\n        </ul>\n        <!-- Links -->\n    </links>\n    <!-- Collapsible content -->\n\n</nav>\n<!--/.Navbar-->";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/trans-historial/trans-historial.component.html":
+  /*!******************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/trans-historial/trans-historial.component.html ***!
+    \******************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentesTransHistorialTransHistorialComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"container pt-3\">\n    <div class=\"card\">\n        <div class=\"card-body\">\n\n            <h2> Historial de transacciones asociadas a la Tx {{ key }}</h2><hr>\n            <h5 class=\"text-center\" style=\"color:red;\">¡ Atención, las transacciones pueden no cargar. Recargar hasta que aparezcan !</h5>\n            <div class=\"text-center\">\n                <button mdbBtn (click)=\"queryHist()\" class=\"btn green accent-2\">Recargar</button>\n            </div><br>\n            <!--Table-->\n            <div class=\"table-responsive\">\n                <table class=\"table table-striped\">\n\n                    <!--Table head-->\n                    <thead>\n                        <tr>\n                            <th>IsDelete</th>\n                            <th>TimeStamp</th>\n                            <th>TxID</th>\n                            <th>Producto</th>\n                            <th>Modelo</th>\n                            <th>Tipo</th>\n                            <th>Dimensiones</th>\n                            <th>Fecha fabricación</th>\n                            <th>Materiales</th>\n                            <th>Descripción</th>\n                            <th>Cantidad</th>\n                            <th>Precio Ud</th>\n                            <th>Precio Total</th>\n                            <th>Origen</th>\n                            <th>Destino</th>\n                            <th>Ordenante</th>\n                            <th>Fecha envio</th>\n                        </tr>\n                    </thead>\n                    <!--Table head-->\n\n                    <!--Table body-->\n                    <tbody>\n                        <tr *ngFor=\"let transac of historial\">\n                            <!-- Aquí va el ngFor-->\n                            <td scope=\"row\">{{ transac.IsDelete }}</td>\n                            <td>{{ transac.Timestamp }}</td>\n                            <td>{{ transac.TxID }}</td>\n                            <td>{{ transac.Value.producto }}</td>\n                            <td>{{ transac.Value.modelo }}</td>\n                            <td>{{ transac.Value.tipo }}</td>\n                            <td>{{ transac.Value.dimensiones }}</td>\n                            <td>{{ transac.Value.fechafab }} </td>\n                            <td>{{ transac.Value.materiales }} </td>\n                            <td>{{ transac.Value.descripcion}} </td>\n                            <td>{{ transac.Value.cantidad }} </td>\n                            <td>{{ transac.Value.precio_ud }} </td>\n                            <td>{{ transac.Value.precio_tot }} </td>\n                            <td>{{ transac.Value.origen }} </td>\n                            <td>{{ transac.Value.dst }} </td>\n                            <td>{{ transac.Value.Orderer }} </td>\n                            <td>{{ transac.Value.fechaenv }} </td>\n                        </tr>\n                    </tbody>\n                    <!--Table body-->\n                </table>\n                <!--Table-->\n            </div>\n            <div class=\"text-center\">\n                <a mdbBtn [routerLink]=\"['/world-state']\" class=\"btn green accent-2\">Volver</a>\n            </div><br>\n        </div>\n    </div>\n</div>\n\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/world-state/world-state.component.html":
+  /*!**********************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/world-state/world-state.component.html ***!
+    \**********************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentesWorldStateWorldStateComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"container pt-3\">\n    <div class=\"card\">\n        <div class=\"card-body\">\n\n            <h2> World Estate - ChannelAll</h2><hr>\n            <h5 class=\"text-center\" style=\"color:red;\">¡ Atención, las transacciones pueden no cargar. Recargar hasta que aparezcan !</h5>\n            <div class=\"text-center\">\n                <button mdbBtn (click)=\"queryChannelAll()\" class=\"btn green accent-2\">Recargar</button>\n            </div><br>\n            <!--Table-->\n            <div class=\"table-responsive\">\n                <table class=\"table table-striped\">\n\n                    <!--Table head-->\n                    <thead>\n                        <tr>\n                            <th>Key</th>\n                            <th>Producto</th>\n                            <th>Modelo</th>\n                            <th>Tipo</th>\n                            <th>Dimensiones</th>\n                            <th>Fecha fabricación</th>\n                            <th>Materiales</th>\n                            <th>Descripción</th>\n                            <th>Cantidad</th>\n                            <th>Precio Ud</th>\n                            <th>Precio Total</th>\n                            <th>Origen</th>\n                            <th>Destino</th>\n                            <th>Ordenante</th>\n                            <th>Fecha envio</th>\n                            <th>Acciones</th>\n                        </tr>\n                    </thead>\n                    <!--Table head-->\n\n                    <!--Table body-->\n                    <tbody>\n                        <tr *ngFor=\"let estado of channelall\">\n                            <!-- Aquí va el ngFor-->\n                            <td scope=\"row\">{{ estado.Key }}</td>\n                            <td>{{ estado.Record.producto }}</td>\n                            <td>{{ estado.Record.modelo }}</td>\n                            <td>{{ estado.Record.tipo }}</td>\n                            <td>{{ estado.Record.dimensiones }}</td>\n                            <td>{{ estado.Record.fechafab }} </td>\n                            <td>{{ estado.Record.materiales }} </td>\n                            <td>{{ estado.Record.descripcion}} </td>\n                            <td>{{ estado.Record.cantidad }} </td>\n                            <td>{{ estado.Record.precio_ud }} </td>\n                            <td>{{ estado.Record.precio_tot }} </td>\n                            <td>{{ estado.Record.origen }} </td>\n                            <td>{{ estado.Record.dst }} </td>\n                            <td>{{ estado.Record.Orderer }} </td>\n                            <td>{{ estado.Record.fechaenv }} </td>\n                            <td *ngIf=\"esAdmin()\">  \n                                <a style=\"width:140px; height: 40px;\" class=\"btn btn-unique waves-light rounded purple-grad\" [routerLink]=\"['/edtrans', estado.Key, 'channelall']\" mdbWavesEffect>Editar</a>\n                            </td>\n                            <td>\n                                <a style=\"width:140px; height: 40px;\" class=\"btn btn-unique waves-light rounded danger-grad\" [routerLink]=\"['/transhist', estado.Key, 'channelall']\" mdbWavesEffect>Historial</a>\n                            </td>\n                        </tr>\n                    </tbody>\n                    <!--Table body-->\n                </table>\n                <!--Table-->\n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -1020,60 +1100,90 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _servicios_log_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _componentes_world_state_world_state_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! ./componentes/world-state/world-state.component */
+    "./src/app/componentes/world-state/world-state.component.ts");
+    /* harmony import */
+
+
+    var _servicios_log_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./servicios/log.service */
     "./src/app/servicios/log.service.ts");
     /* harmony import */
 
 
-    var _servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./servicios/auth-guard.service */
     "./src/app/servicios/auth-guard.service.ts");
     /* harmony import */
 
 
-    var _servicios_admin_guard_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _servicios_admin_guard_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./servicios/admin-guard.service */
     "./src/app/servicios/admin-guard.service.ts");
     /* harmony import */
 
 
-    var _servicios_usuarios_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _servicios_usuarios_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ./servicios/usuarios.service */
     "./src/app/servicios/usuarios.service.ts");
     /* harmony import */
 
 
-    var _app_routes__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    /*! ./servicios/blockchain.service */
+    "./src/app/servicios/blockchain.service.ts");
+    /* harmony import */
+
+
+    var _app_routes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! ./app.routes */
     "./src/app/app.routes.ts");
     /* harmony import */
 
 
-    var _componentes_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _componentes_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! ./componentes/shared/navbar/navbar.component */
     "./src/app/componentes/shared/navbar/navbar.component.ts");
     /* harmony import */
 
 
-    var _componentes_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _componentes_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! ./componentes/shared/footer/footer.component */
     "./src/app/componentes/shared/footer/footer.component.ts");
     /* harmony import */
 
 
-    var angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    var angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! angular-bootstrap-md */
     "./node_modules/angular-bootstrap-md/fesm2015/angular-bootstrap-md.js");
+    /* harmony import */
+
+
+    var _componentes_add_transaction_add_transaction_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    /*! ./componentes/add-transaction/add-transaction.component */
+    "./src/app/componentes/add-transaction/add-transaction.component.ts");
+    /* harmony import */
+
+
+    var _componentes_trans_historial_trans_historial_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    /*! ./componentes/trans-historial/trans-historial.component */
+    "./src/app/componentes/trans-historial/trans-historial.component.ts");
+    /* harmony import */
+
+
+    var _componentes_editar_transaccion_editar_transaccion_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    /*! ./componentes/editar-transaccion/editar-transaccion.component */
+    "./src/app/componentes/editar-transaccion/editar-transaccion.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _componentes_log_login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _componentes_log_signup_signup_component__WEBPACK_IMPORTED_MODULE_8__["SignupComponent"], _componentes_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"], _componentes_panel_administracion_panel_administracion_component__WEBPACK_IMPORTED_MODULE_10__["PanelAdministracionComponent"], _componentes_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_11__["PerfilComponent"], _componentes_editar_usuario_editar_usuario_component__WEBPACK_IMPORTED_MODULE_12__["EditarUsuarioComponent"], _componentes_eliminar_usuario_eliminar_usuario_component__WEBPACK_IMPORTED_MODULE_13__["EliminarUsuarioComponent"], _componentes_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_19__["NavbarComponent"], _componentes_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_20__["FooterComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _app_routes__WEBPACK_IMPORTED_MODULE_18__["APP_ROUTING"], angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_21__["MDBBootstrapModule"].forRoot(), _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"]],
-      providers: [_servicios_log_service__WEBPACK_IMPORTED_MODULE_14__["LogService"], _servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_15__["AuthGuardService"], _servicios_admin_guard_service__WEBPACK_IMPORTED_MODULE_16__["AdminGuardService"], _servicios_usuarios_service__WEBPACK_IMPORTED_MODULE_17__["UsuariosService"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _componentes_log_login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"], _componentes_log_signup_signup_component__WEBPACK_IMPORTED_MODULE_8__["SignupComponent"], _componentes_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"], _componentes_panel_administracion_panel_administracion_component__WEBPACK_IMPORTED_MODULE_10__["PanelAdministracionComponent"], _componentes_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_11__["PerfilComponent"], _componentes_editar_usuario_editar_usuario_component__WEBPACK_IMPORTED_MODULE_12__["EditarUsuarioComponent"], _componentes_eliminar_usuario_eliminar_usuario_component__WEBPACK_IMPORTED_MODULE_13__["EliminarUsuarioComponent"], _componentes_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_21__["NavbarComponent"], _componentes_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_22__["FooterComponent"], _componentes_world_state_world_state_component__WEBPACK_IMPORTED_MODULE_14__["WorldStateComponent"], _componentes_add_transaction_add_transaction_component__WEBPACK_IMPORTED_MODULE_24__["AddTransactionComponent"], _componentes_trans_historial_trans_historial_component__WEBPACK_IMPORTED_MODULE_25__["TransHistorialComponent"], _componentes_editar_transaccion_editar_transaccion_component__WEBPACK_IMPORTED_MODULE_26__["EditarTransaccionComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _app_routes__WEBPACK_IMPORTED_MODULE_20__["APP_ROUTING"], angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_23__["MDBBootstrapModule"].forRoot(), _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"]],
+      providers: [_servicios_log_service__WEBPACK_IMPORTED_MODULE_15__["LogService"], _servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_16__["AuthGuardService"], _servicios_admin_guard_service__WEBPACK_IMPORTED_MODULE_17__["AdminGuardService"], _servicios_usuarios_service__WEBPACK_IMPORTED_MODULE_18__["UsuariosService"], _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_19__["BlockchainService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]],
       schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["NO_ERRORS_SCHEMA"]]
     })], AppModule);
@@ -1165,6 +1275,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _componentes_eliminar_usuario_eliminar_usuario_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./componentes/eliminar-usuario/eliminar-usuario.component */
     "./src/app/componentes/eliminar-usuario/eliminar-usuario.component.ts");
+    /* harmony import */
+
+
+    var _componentes_world_state_world_state_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./componentes/world-state/world-state.component */
+    "./src/app/componentes/world-state/world-state.component.ts");
+    /* harmony import */
+
+
+    var _componentes_add_transaction_add_transaction_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./componentes/add-transaction/add-transaction.component */
+    "./src/app/componentes/add-transaction/add-transaction.component.ts");
+    /* harmony import */
+
+
+    var _componentes_editar_transaccion_editar_transaccion_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! ./componentes/editar-transaccion/editar-transaccion.component */
+    "./src/app/componentes/editar-transaccion/editar-transaccion.component.ts");
+    /* harmony import */
+
+
+    var _componentes_trans_historial_trans_historial_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! ./componentes/trans-historial/trans-historial.component */
+    "./src/app/componentes/trans-historial/trans-historial.component.ts");
 
     var app_routes = [{
       path: 'home',
@@ -1175,6 +1309,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       path: 'signup',
       component: _componentes_log_signup_signup_component__WEBPACK_IMPORTED_MODULE_4__["SignupComponent"]
+    }, {
+      path: 'world-state',
+      component: _componentes_world_state_world_state_component__WEBPACK_IMPORTED_MODULE_11__["WorldStateComponent"],
+      canActivate: [_servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_8__["AuthGuardService"]]
     }, {
       path: 'panelAdmin',
       component: _componentes_panel_administracion_panel_administracion_component__WEBPACK_IMPORTED_MODULE_5__["PanelAdministracionComponent"],
@@ -1192,6 +1330,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       component: _componentes_eliminar_usuario_eliminar_usuario_component__WEBPACK_IMPORTED_MODULE_10__["EliminarUsuarioComponent"],
       canActivate: [_servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_8__["AuthGuardService"], _servicios_admin_guard_service__WEBPACK_IMPORTED_MODULE_9__["AdminGuardService"]]
     }, {
+      path: 'edtrans/:id/:channel',
+      component: _componentes_editar_transaccion_editar_transaccion_component__WEBPACK_IMPORTED_MODULE_13__["EditarTransaccionComponent"],
+      canActivate: [_servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_8__["AuthGuardService"], _servicios_admin_guard_service__WEBPACK_IMPORTED_MODULE_9__["AdminGuardService"]]
+    }, {
+      path: 'transhist/:id/:channel',
+      component: _componentes_trans_historial_trans_historial_component__WEBPACK_IMPORTED_MODULE_14__["TransHistorialComponent"],
+      canActivate: [_servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_8__["AuthGuardService"]]
+    }, {
+      path: 'addtrans',
+      component: _componentes_add_transaction_add_transaction_component__WEBPACK_IMPORTED_MODULE_12__["AddTransactionComponent"],
+      canActivate: [_servicios_auth_guard_service__WEBPACK_IMPORTED_MODULE_8__["AuthGuardService"], _servicios_admin_guard_service__WEBPACK_IMPORTED_MODULE_9__["AdminGuardService"]]
+    }, {
       path: '**',
       pathMatch: 'full',
       redirectTo: 'home'
@@ -1200,6 +1350,489 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var APP_ROUTING = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(app_routes);
     /***/
 
+  },
+
+  /***/
+  "./src/app/componentes/add-transaction/add-transaction.component.scss":
+  /*!****************************************************************************!*\
+    !*** ./src/app/componentes/add-transaction/add-transaction.component.scss ***!
+    \****************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentesAddTransactionAddTransactionComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudGVzL2FkZC10cmFuc2FjdGlvbi9hZGQtdHJhbnNhY3Rpb24uY29tcG9uZW50LnNjc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/componentes/add-transaction/add-transaction.component.ts":
+  /*!**************************************************************************!*\
+    !*** ./src/app/componentes/add-transaction/add-transaction.component.ts ***!
+    \**************************************************************************/
+
+  /*! exports provided: AddTransactionComponent */
+
+  /***/
+  function srcAppComponentesAddTransactionAddTransactionComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddTransactionComponent", function () {
+      return AddTransactionComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../servicios/blockchain.service */
+    "./src/app/servicios/blockchain.service.ts");
+
+    var AddTransactionComponent =
+    /*#__PURE__*/
+    function () {
+      function AddTransactionComponent(_blockService, _router, _activatedRoute) {
+        _classCallCheck(this, AddTransactionComponent);
+
+        this._blockService = _blockService;
+        this._router = _router;
+        this._activatedRoute = _activatedRoute;
+        this.submitOk = null;
+        this.addTrans = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
+          'channel': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('channelall', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+          'key': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+          'producto': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'modelo': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'tipo': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'dimensiones': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'fecha_fab': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern('^(0[1-9]|[12]\\d|3[01])-(0[1-9]|1[0-2])-[12]\\d{3}$')]),
+          'materiales': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'descripcion': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'cantidad': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'precio_ud': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'precio_tot': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'origen': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('Org2'),
+          'dst': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'ordenante': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](localStorage.getItem('Nombre')),
+          'fecha_env': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern('^(0[1-9]|[12]\\d|3[01])-(0[1-9]|1[0-2])-[12]\\d{3}$')])
+        });
+      }
+
+      _createClass(AddTransactionComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this = this;
+
+          this.submitSusc = this._blockService.submitObservable.subscribe(function (valor) {
+            _this.submitOk = valor;
+          });
+          this.addTrans.controls['key'].disable();
+          this.addTrans.controls['channel'].disable();
+          this.addTrans.controls['origen'].disable();
+          this.addTrans.controls['ordenante'].disable();
+        }
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          this._blockService.submitObservable.next(null);
+
+          this.submitSusc.unsubscribe();
+        }
+      }, {
+        key: "reload",
+        value: function reload() {
+          var _this2 = this;
+
+          console.log(this.addTrans.controls['channel'].value);
+
+          this._blockService.getLastKey(this.addTrans.controls['channel'].value.trim()).subscribe(function (key) {
+            _this2.addTrans.controls['key'].setValue((+key.response + 1).toString());
+          });
+        }
+      }, {
+        key: "crear",
+        value: function crear() {
+          var _this3 = this;
+
+          var trans = {
+            channel: this.addTrans.controls['channel'].value.trim(),
+            key: this.addTrans.controls['key'].value.trim(),
+            producto: this.addTrans.controls['producto'].value.trim(),
+            modelo: this.addTrans.controls['modelo'].value.trim(),
+            tipo: this.addTrans.controls['tipo'].value.trim(),
+            dimensiones: this.addTrans.controls['dimensiones'].value.trim(),
+            fechafab: this.addTrans.controls['fecha_fab'].value.trim(),
+            materiales: this.addTrans.controls['materiales'].value.trim(),
+            descripcion: this.addTrans.controls['descripcion'].value.trim(),
+            cantidad: this.addTrans.controls['cantidad'].value.trim(),
+            precioud: this.addTrans.controls['precio_ud'].value.trim(),
+            preciotot: this.addTrans.controls['precio_tot'].value.trim(),
+            org: this.addTrans.controls['origen'].value.trim(),
+            dst: this.addTrans.controls['dst'].value.trim(),
+            ordenante: this.addTrans.controls['ordenante'].value.trim(),
+            fechaenv: this.addTrans.controls['fecha_env'].value.trim()
+          };
+          console.log(trans);
+
+          this._blockService.submitTransaction(trans).subscribe(function (resp) {
+            _this3._blockService.submitObservable.next(true);
+          }, function (error) {
+            _this3._blockService.submitObservable.next(false);
+
+            console.log(error);
+          });
+        }
+      }]);
+
+      return AddTransactionComponent;
+    }();
+
+    AddTransactionComponent.ctorParameters = function () {
+      return [{
+        type: _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_4__["BlockchainService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+      }];
+    };
+
+    AddTransactionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-add-transaction',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./add-transaction.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/add-transaction/add-transaction.component.html")).default,
+      styles: ["\n    .ng-invalid.ng-touched:not(form){\n      color: red;\n  }\n", tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./add-transaction.component.scss */
+      "./src/app/componentes/add-transaction/add-transaction.component.scss")).default]
+    })], AddTransactionComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/componentes/editar-transaccion/editar-transaccion.component.scss":
+  /*!**********************************************************************************!*\
+    !*** ./src/app/componentes/editar-transaccion/editar-transaccion.component.scss ***!
+    \**********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentesEditarTransaccionEditarTransaccionComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudGVzL2VkaXRhci10cmFuc2FjY2lvbi9lZGl0YXItdHJhbnNhY2Npb24uY29tcG9uZW50LnNjc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/componentes/editar-transaccion/editar-transaccion.component.ts":
+  /*!********************************************************************************!*\
+    !*** ./src/app/componentes/editar-transaccion/editar-transaccion.component.ts ***!
+    \********************************************************************************/
+
+  /*! exports provided: EditarTransaccionComponent */
+
+  /***/
+  function srcAppComponentesEditarTransaccionEditarTransaccionComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "EditarTransaccionComponent", function () {
+      return EditarTransaccionComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../servicios/blockchain.service */
+    "./src/app/servicios/blockchain.service.ts");
+
+    var EditarTransaccionComponent =
+    /*#__PURE__*/
+    function () {
+      function EditarTransaccionComponent(_blockService, _router, _activatedRoute) {
+        _classCallCheck(this, EditarTransaccionComponent);
+
+        this._blockService = _blockService;
+        this._router = _router;
+        this._activatedRoute = _activatedRoute;
+        this.submitOk = null;
+        this.editTrans = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
+          'channel': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+          'key': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]),
+          'producto': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'modelo': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'tipo': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'dimensiones': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'fecha_fab': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern('^(0[1-9]|[12]\\d|3[01])-(0[1-9]|1[0-2])-[12]\\d{3}$')]),
+          'materiales': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'descripcion': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'cantidad': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'precio_ud': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'precio_tot': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'origen': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'dst': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](''),
+          'ordenante': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](localStorage.getItem("Nombre")),
+          'fecha_env': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern('^(0[1-9]|[12]\\d|3[01])-(0[1-9]|1[0-2])-[12]\\d{3}$')])
+        });
+      }
+
+      _createClass(EditarTransaccionComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this4 = this;
+
+          //Inicialización de los parámetros del formulario con los valores de la transacción
+          this._activatedRoute.params.subscribe(function (datos) {
+            _this4._blockService.queryTransaction(datos['channel'], datos['id']).subscribe(function (resp) {
+              var trans = JSON.parse(resp.response);
+              console.log(trans);
+              console.log(trans.producto);
+
+              _this4.editTrans.controls['channel'].disable();
+
+              _this4.editTrans.controls['key'].disable();
+
+              _this4.editTrans.controls['ordenante'].disable();
+
+              _this4.editTrans.controls['origen'].disable();
+
+              _this4.editTrans.controls['channel'].setValue(datos['channel']);
+
+              _this4.editTrans.controls['key'].setValue(datos['id']);
+
+              _this4.editTrans.controls['producto'].setValue(trans.producto);
+
+              _this4.editTrans.controls['modelo'].setValue(trans.modelo);
+
+              _this4.editTrans.controls['tipo'].setValue(trans.tipo);
+
+              _this4.editTrans.controls['dimensiones'].setValue(trans.dimensiones);
+
+              _this4.editTrans.controls['fecha_fab'].setValue(trans.fechafab);
+
+              _this4.editTrans.controls['materiales'].setValue(trans.materiales);
+
+              _this4.editTrans.controls['descripcion'].setValue(trans.descripcion);
+
+              _this4.editTrans.controls['cantidad'].setValue(trans.cantidad);
+
+              _this4.editTrans.controls['precio_ud'].setValue(trans.precio_ud);
+
+              _this4.editTrans.controls['precio_tot'].setValue(trans.precio_tot);
+
+              _this4.editTrans.controls['origen'].setValue(trans.origen);
+
+              _this4.editTrans.controls['dst'].setValue(trans.dst);
+
+              _this4.editTrans.controls['ordenante'].setValue(localStorage.getItem("Nombre"));
+
+              _this4.editTrans.controls['fecha_env'].setValue(trans.fechaenv);
+            });
+          });
+
+          this.submitSusc = this._blockService.submitObservable.subscribe(function (valor) {
+            _this4.submitOk = valor;
+          });
+        }
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          this._blockService.submitObservable.next(null);
+
+          this.submitSusc.unsubscribe();
+        }
+      }, {
+        key: "reload",
+        value: function reload() {
+          var _this5 = this;
+
+          this._activatedRoute.params.subscribe(function (datos) {
+            _this5._blockService.queryTransaction(datos['channel'], datos['id']).subscribe(function (resp) {
+              var trans = JSON.parse(resp.response);
+              console.log(trans);
+
+              _this5.editTrans.controls['channel'].disable();
+
+              _this5.editTrans.controls['key'].disable();
+
+              _this5.editTrans.controls['ordenante'].disable();
+
+              _this5.editTrans.controls['origen'].disable();
+
+              _this5.editTrans.controls['channel'].setValue(datos['channel']);
+
+              _this5.editTrans.controls['key'].setValue(datos['id']);
+
+              _this5.editTrans.controls['producto'].setValue(trans.producto);
+
+              _this5.editTrans.controls['modelo'].setValue(trans.modelo);
+
+              _this5.editTrans.controls['tipo'].setValue(trans.tipo);
+
+              _this5.editTrans.controls['dimensiones'].setValue(trans.dimensiones);
+
+              _this5.editTrans.controls['fecha_fab'].setValue(trans.fechafab);
+
+              _this5.editTrans.controls['materiales'].setValue(trans.materiales);
+
+              _this5.editTrans.controls['descripcion'].setValue(trans.descripcion);
+
+              _this5.editTrans.controls['cantidad'].setValue(trans.cantidad);
+
+              _this5.editTrans.controls['precio_ud'].setValue(trans.precio_ud);
+
+              _this5.editTrans.controls['precio_tot'].setValue(trans.precio_tot);
+
+              _this5.editTrans.controls['origen'].setValue(trans.origen);
+
+              _this5.editTrans.controls['dst'].setValue(trans.dst);
+
+              _this5.editTrans.controls['ordenante'].setValue(localStorage.getItem("Nombre"));
+
+              _this5.editTrans.controls['fecha_env'].setValue(trans.fechaenv);
+            });
+          });
+        }
+      }, {
+        key: "editar",
+        value: function editar() {
+          var _this6 = this;
+
+          var trans = {
+            channel: this.editTrans.controls['channel'].value.trim(),
+            key: this.editTrans.controls['key'].value.trim(),
+            producto: this.editTrans.controls['producto'].value.trim(),
+            modelo: this.editTrans.controls['modelo'].value.trim(),
+            tipo: this.editTrans.controls['tipo'].value.trim(),
+            dimensiones: this.editTrans.controls['dimensiones'].value.trim(),
+            fechafab: this.editTrans.controls['fecha_fab'].value.trim(),
+            materiales: this.editTrans.controls['materiales'].value.trim(),
+            descripcion: this.editTrans.controls['descripcion'].value.trim(),
+            cantidad: this.editTrans.controls['cantidad'].value.trim(),
+            precioud: this.editTrans.controls['precio_ud'].value.trim(),
+            preciotot: this.editTrans.controls['precio_tot'].value.trim(),
+            org: this.editTrans.controls['origen'].value.trim(),
+            dst: this.editTrans.controls['dst'].value.trim(),
+            ordenante: this.editTrans.controls['ordenante'].value.trim(),
+            fechaenv: this.editTrans.controls['fecha_env'].value.trim()
+          };
+          console.log(trans);
+
+          this._blockService.editTransaction(trans).subscribe(function (resp) {
+            _this6._blockService.submitObservable.next(true);
+          }, function (error) {
+            _this6._blockService.submitObservable.next(false);
+
+            console.log(error);
+          });
+        }
+        /*******************************
+        Funciones de validación extras
+        ********************************/
+
+      }, {
+        key: "noVacio",
+        value: function noVacio(control) {
+          if (typeof control.value === 'string' && !control.value.trim()) {
+            return {
+              novacio: true
+            };
+          }
+
+          return null;
+        }
+      }]);
+
+      return EditarTransaccionComponent;
+    }();
+
+    EditarTransaccionComponent.ctorParameters = function () {
+      return [{
+        type: _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_4__["BlockchainService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+      }];
+    };
+
+    EditarTransaccionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-editar-transaccion',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./editar-transaccion.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/editar-transaccion/editar-transaccion.component.html")).default,
+      styles: ["\n    .ng-invalid.ng-touched:not(form){\n      color: red;\n  }\n", tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./editar-transaccion.component.scss */
+      "./src/app/componentes/editar-transaccion/editar-transaccion.component.scss")).default]
+    })], EditarTransaccionComponent);
+    /***/
   },
 
   /***/
@@ -1299,29 +1932,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(EditarUsuarioComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this = this;
+          var _this7 = this;
 
           //Inicialización de los parámetros del formulario con los valores del usuario
           this._activatedRoute.params.subscribe(function (datos) {
-            _this._usuariosService.buscarUsuarioId(datos['id']).subscribe(function (resp) {
-              _this.usuario = resp;
+            _this7._usuariosService.buscarUsuarioId(datos['id']).subscribe(function (resp) {
+              _this7.usuario = resp;
               console.log(resp);
-              console.log(_this.usuario);
+              console.log(_this7.usuario);
 
-              _this.cambioDatos.controls['nombre'].setValue(resp.nombre);
+              _this7.cambioDatos.controls['nombre'].setValue(resp.nombre);
 
-              _this.cambioDatos.controls['correo'].setValue(resp.correo);
+              _this7.cambioDatos.controls['correo'].setValue(resp.correo);
 
-              _this.cambioDatos.controls['permisos'].setValue(resp.permisos);
+              _this7.cambioDatos.controls['permisos'].setValue(resp.permisos);
             });
           }); //Nos suscribimos a los observadores para poder controlar los cambios en los mensajes de confirmación/error
 
 
           this.editsusc = this._usuariosService.editObservable.subscribe(function (valor) {
-            _this.editok = valor;
+            _this7.editok = valor;
           });
           this.passsusc = this._usuariosService.passObservable.subscribe(function (valor) {
-            _this.passok = valor;
+            _this7.passok = valor;
           });
         }
       }, {
@@ -1341,7 +1974,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "editarInfo",
         value: function editarInfo() {
-          var _this2 = this;
+          var _this8 = this;
 
           var edit = {
             Id: this.usuario.id,
@@ -1352,9 +1985,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           console.log(edit);
 
           this._usuariosService.editarDatos(edit, "EditUser").subscribe(function (respuesta) {
-            _this2._usuariosService.editObservable.next(true);
+            _this8._usuariosService.editObservable.next(true);
           }, function (error) {
-            _this2._usuariosService.editObservable.next(false);
+            _this8._usuariosService.editObservable.next(false);
 
             console.log(error);
           });
@@ -1362,7 +1995,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "cambiarPassword",
         value: function cambiarPassword() {
-          var _this3 = this;
+          var _this9 = this;
 
           var nuevaPass = {
             Id: this.usuario.id,
@@ -1371,9 +2004,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           console.log(nuevaPass);
 
           this._usuariosService.cambiarPass(nuevaPass, "ChangePUser").subscribe(function (respuesta) {
-            _this3._usuariosService.passObservable.next(true);
+            _this9._usuariosService.passObservable.next(true);
           }, function (error) {
-            _this3._usuariosService.passObservable.next(false);
+            _this9._usuariosService.passObservable.next(false);
 
             console.log(error);
           });
@@ -1519,13 +2152,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "eliminar",
         value: function eliminar() {
-          var _this4 = this;
+          var _this10 = this;
 
           var id = this._location.path().split("/")[2];
 
           this._usuariosService.eliminarUsuario(id).subscribe(function (resp) {
             if (resp.ok) {
-              _this4._router.navigate(['/panelAdmin']);
+              _this10._router.navigate(['/panelAdmin']);
             }
           });
         }
@@ -1754,14 +2387,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(LoginComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this11 = this;
 
           if (this._logService.sesionValida()) {
             this._router.navigate(['/home']);
           }
 
           this.subscription = this._logService.logObservable.subscribe(function (valor) {
-            _this5.correcto = valor;
+            _this11.correcto = valor;
           });
         }
       }, {
@@ -1774,7 +2407,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "logearse",
         value: function logearse() {
-          var _this6 = this;
+          var _this12 = this;
 
           this.datos = {
             Nombre: null,
@@ -1786,16 +2419,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this._logService.conectarse(this.datos).subscribe(function (resp) {
             console.log(resp);
 
-            _this6._router.navigate(['/home']);
+            _this12._router.navigate(['/home']);
           }, function (error) {
-            _this6._logService.logObservable.next(false);
+            _this12._logService.logObservable.next(false);
 
             console.log(error);
 
             if (error.error.text != null) {
-              _this6._logService.crearSesion(error.error.text);
+              _this12._logService.crearSesion(error.error.text);
 
-              _this6._router.navigate(['/home']);
+              _this12._router.navigate(['/home']);
             }
           });
         } //Validaciones
@@ -1924,8 +2557,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         };
         this.forma = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
           'nombre': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(3), this.noVacio]),
-          'email': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.{1}[a-z]{2,3}$"), this.noVacio]),
-          'password': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, this.noVacio, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{5,}$")]),
+          'email': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.{1}[a-z]{2,3}$"), this.noVacio], [this.existeEmail.bind(this)]),
+          'password': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, this.noVacio, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-+/()|]).{5,}$")]),
           'repassReg': new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]()
         });
         /*
@@ -1952,7 +2585,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "registrar",
         value: function registrar() {
-          var _this7 = this;
+          var _this13 = this;
 
           this.usuario = {
             Nombre: this.forma.controls['nombre'].value.trim(),
@@ -1963,7 +2596,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this._logService.nuevoUsuario(this.usuario).subscribe(function (respuesta) {
             if (respuesta.ok) {
-              _this7._router.navigate(['/login']);
+              _this13._router.navigate(['/login']);
             }
           });
         } //Validaciones
@@ -1994,11 +2627,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "existeEmail",
         value: function existeEmail(control) {
-          var _this8 = this;
+          var _this14 = this;
 
           return new Promise(function (resolve, reject) {
             setTimeout(function () {
-              _this8._logService.existeEmail(control.value).subscribe(function (respuesta) {
+              _this14._logService.existeEmail(control.value).subscribe(function (respuesta) {
                 console.log(control);
 
                 if (respuesta == 0) {
@@ -2108,7 +2741,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*#__PURE__*/
     function () {
       function PanelAdministracionComponent(_usuariosService, _router) {
-        var _this9 = this;
+        var _this15 = this;
 
         _classCallCheck(this, PanelAdministracionComponent);
 
@@ -2116,7 +2749,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this._router = _router;
 
         _usuariosService.obtenerUsuarios().subscribe(function (datos) {
-          _this9.usuarios = datos;
+          _this15.usuarios = datos;
           console.log(datos);
         });
       }
@@ -2127,20 +2760,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "buscar",
         value: function buscar() {
-          var _this10 = this;
+          var _this16 = this;
 
           this._usuariosService.buscarUsuario(this.searchText).subscribe(function (datos) {
-            _this10.usuarios = datos;
+            _this16.usuarios = datos;
             console.log(datos);
           });
         }
       }, {
         key: "todos",
         value: function todos() {
-          var _this11 = this;
+          var _this17 = this;
 
           this._usuariosService.obtenerUsuarios().subscribe(function (datos) {
-            _this11.usuarios = datos;
+            _this17.usuarios = datos;
           });
         }
       }]);
@@ -2269,13 +2902,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PerfilComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this18 = this;
 
           this.editsusc = this._usuariosService.editObservable.subscribe(function (valor) {
-            _this12.editok = valor;
+            _this18.editok = valor;
           });
           this.passsusc = this._usuariosService.passObservable.subscribe(function (valor) {
-            _this12.passok = valor;
+            _this18.passok = valor;
           });
         }
       }, {
@@ -2295,7 +2928,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "editarInfo",
         value: function editarInfo() {
-          var _this13 = this;
+          var _this19 = this;
 
           var edit = {
             Id: +localStorage.getItem("Id"),
@@ -2305,27 +2938,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           };
 
           this._usuariosService.editarDatos(edit, "Edit").subscribe(function (respuesta) {
-            _this13._logService.cerrarSesion();
+            _this19._logService.cerrarSesion();
 
-            _this13._logService.crearSesion(respuesta.body);
+            _this19._logService.crearSesion(respuesta.body);
 
-            _this13._usuariosService.editObservable.next(true);
+            _this19._usuariosService.editObservable.next(true);
           }, function (error) {
             console.log(error);
 
             if (error.error.text != null) {
-              _this13._logService.crearSesion(error.error.text);
+              _this19._logService.crearSesion(error.error.text);
 
-              _this13._usuariosService.editObservable.next(true);
+              _this19._usuariosService.editObservable.next(true);
             } else {
-              _this13._usuariosService.editObservable.next(false);
+              _this19._usuariosService.editObservable.next(false);
             }
           });
         }
       }, {
         key: "cambiarPassword",
         value: function cambiarPassword() {
-          var _this14 = this;
+          var _this20 = this;
 
           var nuevaPass = {
             Id: +localStorage.getItem("Id"),
@@ -2334,9 +2967,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           console.log(nuevaPass);
 
           this._usuariosService.cambiarPass(nuevaPass, "ChangeP").subscribe(function (respuesta) {
-            _this14._usuariosService.passObservable.next(true);
+            _this20._usuariosService.passObservable.next(true);
           }, function (error) {
-            _this14._usuariosService.passObservable.next(false);
+            _this20._usuariosService.passObservable.next(false);
 
             console.log(error);
           });
@@ -2593,6 +3226,279 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/componentes/trans-historial/trans-historial.component.scss":
+  /*!****************************************************************************!*\
+    !*** ./src/app/componentes/trans-historial/trans-historial.component.scss ***!
+    \****************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentesTransHistorialTransHistorialComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudGVzL3RyYW5zLWhpc3RvcmlhbC90cmFucy1oaXN0b3JpYWwuY29tcG9uZW50LnNjc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/componentes/trans-historial/trans-historial.component.ts":
+  /*!**************************************************************************!*\
+    !*** ./src/app/componentes/trans-historial/trans-historial.component.ts ***!
+    \**************************************************************************/
+
+  /*! exports provided: TransHistorialComponent */
+
+  /***/
+  function srcAppComponentesTransHistorialTransHistorialComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TransHistorialComponent", function () {
+      return TransHistorialComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../servicios/blockchain.service */
+    "./src/app/servicios/blockchain.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var TransHistorialComponent =
+    /*#__PURE__*/
+    function () {
+      function TransHistorialComponent(_blockService, _router, _activatedRoute) {
+        _classCallCheck(this, TransHistorialComponent);
+
+        this._blockService = _blockService;
+        this._router = _router;
+        this._activatedRoute = _activatedRoute;
+        this.queryHist();
+      }
+
+      _createClass(TransHistorialComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.queryHist();
+        }
+      }, {
+        key: "queryHist",
+        value: function queryHist() {
+          var _this21 = this;
+
+          this._activatedRoute.params.subscribe(function (datos) {
+            _this21.key = datos['id'];
+
+            _this21._blockService.queryHist(datos['channel'], datos['id']).subscribe(function (resp) {
+              var hists = JSON.parse(resp.response);
+              console.log(hists);
+              _this21.historial = hists;
+            });
+          });
+        }
+      }]);
+
+      return TransHistorialComponent;
+    }();
+
+    TransHistorialComponent.ctorParameters = function () {
+      return [{
+        type: _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_2__["BlockchainService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+      }];
+    };
+
+    TransHistorialComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-trans-historial',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./trans-historial.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/trans-historial/trans-historial.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./trans-historial.component.scss */
+      "./src/app/componentes/trans-historial/trans-historial.component.scss")).default]
+    })], TransHistorialComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/componentes/world-state/world-state.component.scss":
+  /*!********************************************************************!*\
+    !*** ./src/app/componentes/world-state/world-state.component.scss ***!
+    \********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentesWorldStateWorldStateComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudGVzL3dvcmxkLXN0YXRlL3dvcmxkLXN0YXRlLmNvbXBvbmVudC5zY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/componentes/world-state/world-state.component.ts":
+  /*!******************************************************************!*\
+    !*** ./src/app/componentes/world-state/world-state.component.ts ***!
+    \******************************************************************/
+
+  /*! exports provided: WorldStateComponent */
+
+  /***/
+  function srcAppComponentesWorldStateWorldStateComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "WorldStateComponent", function () {
+      return WorldStateComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../servicios/blockchain.service */
+    "./src/app/servicios/blockchain.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var src_app_servicios_log_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! src/app/servicios/log.service */
+    "./src/app/servicios/log.service.ts");
+
+    var WorldStateComponent =
+    /*#__PURE__*/
+    function () {
+      function WorldStateComponent(_blockService, _router, _logService) {
+        _classCallCheck(this, WorldStateComponent);
+
+        this._blockService = _blockService;
+        this._router = _router;
+        this._logService = _logService;
+        this.channelall_lastKey = "";
+        this.channel13_lastKey = "";
+      }
+
+      _createClass(WorldStateComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.queryChannelAll();
+          this.getLastKeyAll();
+        }
+      }, {
+        key: "esAdmin",
+        value: function esAdmin() {
+          return this._logService.esAdmin();
+        }
+      }, {
+        key: "getLastKeyAll",
+        value: function getLastKeyAll() {
+          var _this22 = this;
+
+          this._blockService.getLastKey("channelall").subscribe(function (key) {
+            console.log(key.response);
+            _this22.channelall_lastKey = (+key.response + 1).toString();
+          });
+        }
+      }, {
+        key: "queryChannelAll",
+        value: function queryChannelAll() {
+          var _this23 = this;
+
+          this.getLastKeyAll();
+          var lastIdx;
+
+          if (this.channelall_lastKey == "") {
+            lastIdx = "9";
+          } else {
+            lastIdx = this.channelall_lastKey;
+          }
+
+          this._blockService.queryTransactions("channelall", "1", lastIdx).subscribe(function (datos) {
+            console.log(JSON.parse(datos.response));
+            _this23.channelall = JSON.parse(datos.response);
+          });
+        }
+      }]);
+
+      return WorldStateComponent;
+    }();
+
+    WorldStateComponent.ctorParameters = function () {
+      return [{
+        type: _servicios_blockchain_service__WEBPACK_IMPORTED_MODULE_2__["BlockchainService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: src_app_servicios_log_service__WEBPACK_IMPORTED_MODULE_4__["LogService"]
+      }];
+    };
+
+    WorldStateComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-world-state',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./world-state.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/componentes/world-state/world-state.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./world-state.component.scss */
+      "./src/app/componentes/world-state/world-state.component.scss")).default]
+    })], WorldStateComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/servicios/admin-guard.service.ts":
   /*!**************************************************!*\
     !*** ./src/app/servicios/admin-guard.service.ts ***!
@@ -2727,6 +3633,236 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
     })], AuthGuardService);
+    /***/
+  },
+
+  /***/
+  "./src/app/servicios/blockchain.service.ts":
+  /*!*************************************************!*\
+    !*** ./src/app/servicios/blockchain.service.ts ***!
+    \*************************************************/
+
+  /*! exports provided: BlockchainService */
+
+  /***/
+  function srcAppServiciosBlockchainServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BlockchainService", function () {
+      return BlockchainService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../../node_modules/rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+
+    var BlockchainService =
+    /*#__PURE__*/
+    function () {
+      function BlockchainService(http) {
+        _classCallCheck(this, BlockchainService);
+
+        this.http = http;
+        this.nodeapi = "https://51.145.147.212:8080/api/";
+        this.submitObservable = new _node_modules_rxjs__WEBPACK_IMPORTED_MODULE_4__["BehaviorSubject"](null);
+      }
+
+      _createClass(BlockchainService, [{
+        key: "test",
+        value: function test() {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
+          var url = "".concat(this.nodeapi, "test");
+          return this.http.get(url, {
+            headers: headers,
+            observe: 'response'
+          }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (resp) {
+            console.log(resp);
+          }));
+        }
+      }, {
+        key: "getLastKey",
+        value: function getLastKey(channel) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
+          var datos = {
+            channel: channel,
+            key: "lastKey"
+          };
+          var body = JSON.stringify(datos);
+          console.log(body);
+          var url = "".concat(this.nodeapi, "query");
+          return this.http.post(url, body, {
+            headers: headers,
+            observe: 'response'
+          }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (resp) {
+            console.log(resp);
+
+            if (resp.ok) {
+              return resp.body;
+            }
+          }));
+        }
+      }, {
+        key: "queryTransactions",
+        value: function queryTransactions(channel, initKey, endKey) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
+          var datos = {
+            channel: channel,
+            initKey: initKey,
+            endKey: endKey
+          };
+          var body = JSON.stringify(datos);
+          console.log(body);
+          var url = "".concat(this.nodeapi, "queryall");
+          return this.http.post(url, body, {
+            headers: headers,
+            observe: 'response'
+          }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (resp) {
+            console.log(resp);
+
+            if (resp.ok) {
+              return resp.body;
+            }
+          }));
+        }
+      }, {
+        key: "queryTransaction",
+        value: function queryTransaction(channel, key) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
+          var datos = {
+            channel: channel,
+            key: key
+          };
+          var body = JSON.stringify(datos);
+          console.log(body);
+          var url = "".concat(this.nodeapi, "query");
+          return this.http.post(url, body, {
+            headers: headers,
+            observe: 'response'
+          }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (resp) {
+            console.log(resp);
+
+            if (resp.ok) {
+              return resp.body;
+            }
+          }));
+        }
+      }, {
+        key: "queryHist",
+        value: function queryHist(channel, key) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
+          var datos = {
+            channel: channel,
+            key: key
+          };
+          var body = JSON.stringify(datos);
+          console.log(body);
+          var url = "".concat(this.nodeapi, "queryhist");
+          return this.http.post(url, body, {
+            headers: headers,
+            observe: 'response'
+          }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (resp) {
+            console.log(resp);
+
+            if (resp.ok) {
+              return resp.body;
+            }
+          }));
+        }
+      }, {
+        key: "submitTransaction",
+        value: function submitTransaction(newTrans) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
+          var body = JSON.stringify(newTrans);
+          console.log(body);
+          var url = "".concat(this.nodeapi, "addship");
+          return this.http.post(url, body, {
+            headers: headers,
+            observe: 'response'
+          }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (resp) {
+            console.log(resp);
+            return resp;
+          }));
+        }
+      }, {
+        key: "editTransaction",
+        value: function editTransaction(newTrans) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          });
+          var body = JSON.stringify(newTrans);
+          console.log(body);
+          var url = "".concat(this.nodeapi, "editship");
+          return this.http.post(url, body, {
+            headers: headers,
+            observe: 'response'
+          }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (resp) {
+            console.log(resp);
+            return resp;
+          }));
+        }
+      }]);
+
+      return BlockchainService;
+    }();
+
+    BlockchainService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    BlockchainService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], BlockchainService);
     /***/
   },
 
@@ -3207,7 +4343,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/oliver/Documents/VSC Projects/TFM/Entidad2/src/main.ts */
+    /*! /Users/oliver/Documents/VSC_Projects/TFM/Entidad2/src/main.ts */
     "./src/main.ts");
     /***/
   }

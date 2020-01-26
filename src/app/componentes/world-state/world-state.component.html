@@ -1,0 +1,70 @@
+<div class="container pt-3">
+    <div class="card">
+        <div class="card-body">
+
+            <h2> World Estate - ChannelAll</h2><hr>
+            <h5 class="text-center" style="color:red;">¡ Atención, las transacciones pueden no cargar. Recargar hasta que aparezcan !</h5>
+            <div class="text-center">
+                <button mdbBtn (click)="queryChannelAll()" class="btn green accent-2">Recargar</button>
+            </div><br>
+            <!--Table-->
+            <div class="table-responsive">
+                <table class="table table-striped">
+
+                    <!--Table head-->
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>Producto</th>
+                            <th>Modelo</th>
+                            <th>Tipo</th>
+                            <th>Dimensiones</th>
+                            <th>Fecha fabricación</th>
+                            <th>Materiales</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Precio Ud</th>
+                            <th>Precio Total</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Ordenante</th>
+                            <th>Fecha envio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <!--Table head-->
+
+                    <!--Table body-->
+                    <tbody>
+                        <tr *ngFor="let estado of channelall">
+                            <!-- Aquí va el ngFor-->
+                            <td scope="row">{{ estado.Key }}</td>
+                            <td>{{ estado.Record.producto }}</td>
+                            <td>{{ estado.Record.modelo }}</td>
+                            <td>{{ estado.Record.tipo }}</td>
+                            <td>{{ estado.Record.dimensiones }}</td>
+                            <td>{{ estado.Record.fechafab }} </td>
+                            <td>{{ estado.Record.materiales }} </td>
+                            <td>{{ estado.Record.descripcion}} </td>
+                            <td>{{ estado.Record.cantidad }} </td>
+                            <td>{{ estado.Record.precio_ud }} </td>
+                            <td>{{ estado.Record.precio_tot }} </td>
+                            <td>{{ estado.Record.origen }} </td>
+                            <td>{{ estado.Record.dst }} </td>
+                            <td>{{ estado.Record.Orderer }} </td>
+                            <td>{{ estado.Record.fechaenv }} </td>
+                            <td *ngIf="esAdmin()">  
+                                <a style="width:140px; height: 40px;" class="btn btn-unique waves-light rounded purple-grad" [routerLink]="['/edtrans', estado.Key, 'channelall']" mdbWavesEffect>Editar</a>
+                            </td>
+                            <td>
+                                <a style="width:140px; height: 40px;" class="btn btn-unique waves-light rounded danger-grad" [routerLink]="['/transhist', estado.Key, 'channelall']" mdbWavesEffect>Historial</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!--Table body-->
+                </table>
+                <!--Table-->
+            </div>
+        </div>
+    </div>
+</div>

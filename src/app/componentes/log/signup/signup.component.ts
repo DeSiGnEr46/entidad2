@@ -46,12 +46,15 @@ export class SignupComponent implements OnInit {
         Validators.required,
         Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.{1}[a-z]{2,3}$"),
         this.noVacio
+      ],
+      [
+        this.existeEmail.bind(this)
       ]),
 
       'password': new FormControl('', [
         Validators.required,
         this.noVacio,
-        Validators.pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{5,}$")
+        Validators.pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-+/()|]).{5,}$")
       ]),
       'repassReg': new FormControl()
     });
