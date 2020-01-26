@@ -21,7 +21,7 @@
 
             <div class="md-form">
                 <i class="fa fa-user prefix grey-text"></i>
-                <input type="text" id="key" placeholder="Key" class="form-control form-control-sm"
+                <input type="text" id="key" placeholder="Key*" class="form-control form-control-sm"
                     formControlName="key">
             </div>
 
@@ -97,7 +97,7 @@
 
             <div class="md-form">
                 <i class="fa fa-user prefix grey-text"></i>
-                <input type="text" id="dst" placeholder="Destino" class="form-control form-control-sm"
+                <input type="text" id="dst" placeholder="Destino*" class="form-control form-control-sm"
                     formControlName="dst">
             </div>
 
@@ -123,6 +123,8 @@
             <div class="red-text" *ngIf="!submitOk && submitOk != null">
                 Se ha producido un error. Inténtelo de nuevo.
             </div>
+
+            <p>* Campo obligatorio</p>
 
             <div class="text-center mb-10">
                 <button [disabled]="!addTrans.valid" class="btn btn-unique waves-light " type="submit"

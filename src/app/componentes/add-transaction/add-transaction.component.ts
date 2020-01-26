@@ -56,7 +56,9 @@ export class AddTransactionComponent implements OnInit {
       'origen': new FormControl(
         'Org2'),
       'dst': new FormControl(
-        ''),
+        '', [
+          Validators.required
+        ]),
       'ordenante': new FormControl(
         localStorage.getItem('Nombre')),
       'fecha_env': new FormControl(
