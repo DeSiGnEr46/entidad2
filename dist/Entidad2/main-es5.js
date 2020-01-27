@@ -3435,7 +3435,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "ngOnInit",
         value: function ngOnInit() {
           this.queryChannelAll();
-          this.getLastKeyAll();
         }
       }, {
         key: "esAdmin",
@@ -3449,7 +3448,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this._blockService.getLastKey("channelall").subscribe(function (key) {
             console.log(key.response);
-            _this22.channelall_lastKey = (+key.response + 1).toString();
+
+            if (key.response == "") {
+              console.log("Fallo: " + key.response);
+
+              _this22.queryChannelAll();
+            } else {
+              _this22.channelall_lastKey = (+key.response + 1).toString();
+            }
           });
         }
       }, {
@@ -3457,16 +3463,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function queryChannelAll() {
           var _this23 = this;
 
-          this.getLastKeyAll();
-          var lastIdx;
-
-          if (this.channelall_lastKey == "") {
-            lastIdx = "9";
-          } else {
-            lastIdx = this.channelall_lastKey;
-          }
-
-          this._blockService.queryTransactions("channelall", "1", lastIdx).subscribe(function (datos) {
+          this._blockService.queryTransactions("channelall", "1", "99").subscribe(function (datos) {
             console.log(JSON.parse(datos.response));
             _this23.channelall = JSON.parse(datos.response);
           });
@@ -3734,6 +3731,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             if (resp.ok) {
               return resp.body;
+            } else {
+              console.log("Error key");
+              return "";
             }
           }));
         }

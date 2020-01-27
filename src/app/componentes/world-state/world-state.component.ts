@@ -22,7 +22,6 @@ export class WorldStateComponent implements OnInit {
 
   ngOnInit() {
     this.queryChannelAll();
-    this.getLastKeyAll();
   }
 
   esAdmin():boolean{
@@ -32,20 +31,18 @@ export class WorldStateComponent implements OnInit {
   getLastKeyAll(){
     this._blockService.getLastKey("channelall").subscribe( (key) => {
       console.log(key.response);
-      this.channelall_lastKey = (+key.response + 1).toString();
+      if(key.response == ""){
+        console.log("Fallo: " + key.response);
+        this.queryChannelAll();
+      }else{
+        this.channelall_lastKey = (+key.response + 1).toString();
+      }
+      
     })
   }
 
   queryChannelAll(): any{
-    this.getLastKeyAll();
-
-    let lastIdx;
-    if(this.channelall_lastKey == ""){
-      lastIdx = "9";
-    }else{
-      lastIdx = this.channelall_lastKey;
-    }
-    this._blockService.queryTransactions("channelall","1",lastIdx).subscribe((datos) => {
+    this._blockService.queryTransactions("channelall","1","99").subscribe((datos) => {
       console.log(JSON.parse(datos.response));
       this.channelall = JSON.parse(datos.response);
     })

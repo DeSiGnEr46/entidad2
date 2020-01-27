@@ -49,6 +49,9 @@ export class BlockchainService {
         console.log(resp);
         if (resp.ok) {
           return resp.body;
+        }else{
+          console.log("Error key");
+          return "";
         } 
       })
     )

@@ -2002,7 +2002,6 @@ let WorldStateComponent = class WorldStateComponent {
     }
     ngOnInit() {
         this.queryChannelAll();
-        this.getLastKeyAll();
     }
     esAdmin() {
         return this._logService.esAdmin();
@@ -2010,19 +2009,17 @@ let WorldStateComponent = class WorldStateComponent {
     getLastKeyAll() {
         this._blockService.getLastKey("channelall").subscribe((key) => {
             console.log(key.response);
-            this.channelall_lastKey = (+key.response + 1).toString();
+            if (key.response == "") {
+                console.log("Fallo: " + key.response);
+                this.queryChannelAll();
+            }
+            else {
+                this.channelall_lastKey = (+key.response + 1).toString();
+            }
         });
     }
     queryChannelAll() {
-        this.getLastKeyAll();
-        let lastIdx;
-        if (this.channelall_lastKey == "") {
-            lastIdx = "9";
-        }
-        else {
-            lastIdx = this.channelall_lastKey;
-        }
-        this._blockService.queryTransactions("channelall", "1", lastIdx).subscribe((datos) => {
+        this._blockService.queryTransactions("channelall", "1", "99").subscribe((datos) => {
             console.log(JSON.parse(datos.response));
             this.channelall = JSON.parse(datos.response);
         });
@@ -2171,6 +2168,10 @@ let BlockchainService = class BlockchainService {
             console.log(resp);
             if (resp.ok) {
                 return resp.body;
+            }
+            else {
+                console.log("Error key");
+                return "";
             }
         }));
     }
