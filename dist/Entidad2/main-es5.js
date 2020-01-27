@@ -151,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"jumbotron card card-image\" style=\"background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);\">\n    <div class=\"text-white text-center py-5 px-4\">\n      <div>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"!sesionActiva()\"><strong>Bienvenido a la web de la Entidad2</strong></h2>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"sesionActiva()\"><strong>Bienvenido {{Nombre}}</strong></h2>\n        <p class=\"mx-5 mb-5\">En esta organización se desarrollan piezas que se utilizan para montar productos finales.\n        </p>\n        <a class=\"btn btn-light\" *ngIf=\"!sesionActiva()\" [routerLink]=\"['/login']\"> Inicia Sesión!</a>\n      </div>\n    </div>\n  </div>";
+    __webpack_exports__["default"] = "<div class=\"jumbotron card card-image\" style=\"background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);\">\n    <div class=\"text-white text-center py-5 px-4\">\n      <div>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"!sesionActiva()\"><strong>Bienvenido a la web de la Entidad2</strong></h2>\n        <h2 class=\"card-title h1-responsive pt-3 mb-5 font-bold\" *ngIf=\"sesionActiva()\"><strong>Bienvenido {{Nombre}}</strong></h2>\n        <p class=\"mx-5 mb-5\">En esta empresa se fabrican productos y se distribuyen a otras para su venta al público.\n        </p>\n        <a class=\"btn btn-light\" *ngIf=\"!sesionActiva()\" [routerLink]=\"['/login']\"> Inicia Sesión!</a>\n      </div>\n    </div>\n  </div>";
     /***/
   },
 
